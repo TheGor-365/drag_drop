@@ -1,0 +1,8 @@
+<%= render @post %>
+
+<div>
+  <%= link_to "Edit this post", edit_post_path(@post), class: "text-success" %> | |
+  <%= link_to "Back to posts", posts_path, class: "text-primary" %>
+
+  <%= button_to "Destroy this post", @post, method: :delete, class: "mt-5 btn-sm btn-danger" %>
+</div>
