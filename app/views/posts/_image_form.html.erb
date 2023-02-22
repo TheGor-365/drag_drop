@@ -1,0 +1,14 @@
+<div
+  class="dropzone dropzone-default dz-clickable"
+  data-controller="dropzone"
+  data-dropzone-max-file-size="5"
+  data-dropzone-accepted-files="image/*"
+  data-dropzone-max-file-size="2"
+  data-upload-multiple="true"
+>
+  <%= form.file_field :images, multiple: true, direct_upload: true, data: { dropzone_target: 'input' } %>
+  <div class="dropzone-msg dz-message needsclick">
+    <h5 class="dropzone-msg-title text-muted">Drag to upload</h5>
+    <span class="dropzone-msg-desc text-muted">Max size 2MB.</span>
+  </div>
+</div>
